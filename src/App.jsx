@@ -8,7 +8,7 @@ import EditorFunc from "./EditorFunc"
 
 const routes = [
   { path: "/", name: "Home", Component: Templates },
-  { path: "/new", name: "New", Component: Editor },
+  { path: "/new", name: "New", Component: EditorFunc },
   { path: "/edit/:id", name: "Edit", Component: EditorFunc }
 ]
 
