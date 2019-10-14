@@ -32,7 +32,7 @@ class Editor extends Component {
               value={templateID}
               type="text"
               required
-              onChange={event => this.chnageTemplateName(event.target.value)}
+              onChange={event => this.changeTemplateName(event.target.value)}
             />
           </Container>
 
@@ -50,7 +50,7 @@ class Editor extends Component {
     )
   }
 
-  chnageTemplateName = name => {
+  changeTemplateName = name => {
     let oldTemplateID = this.state.templateID
 
     // removing old template from localstorage
