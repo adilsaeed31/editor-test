@@ -13,7 +13,8 @@ const EditorFunc = props => {
   //Setting empty template ID
   const [templateID, setTemplateID] = useState("")
   const [oldID, setOldID] = useState(props.match.id || null)
-
+  
+  // Only doing this because to show Update and Save for Better UI/UX
   let typeTemplate =
     props.location.pathname.split("/")[1] === "edit" ? "update" : "save"
 
